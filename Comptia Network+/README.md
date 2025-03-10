@@ -2,6 +2,41 @@
 
 This write-up provides a comprehensive overview of network topologies, cabling, connectors, and related concepts, based on a detailed YouTube transcript. Readers will gain a solid understanding of different network architectures, cabling types, connectors, and troubleshooting techniques.
 
+## Table of Contents
+- [Network Topologies](#network-topologies)
+  - [Star Topology](#star-topology)
+  - [Bus Topology](#bus-topology)
+  - [Ring Topology](#ring-topology)
+  - [Mesh Topology](#mesh-topology)
+  - [Hybrid Topologies](#hybrid-topologies)
+  - [Point-to-Point Topology](#point-to-point-topology)
+  - [Client-Server Topology](#client-server-topology)
+  - [Point-to-Multipoint Topology](#point-to-multipoint-topology)
+  - [Peer-to-Peer Topology](#peer-to-peer-topology)
+- [Network Connectors](#network-connectors)
+- [Plenum-Rated Cables](#plenum-rated-cables)
+- [Ethernet over Other Media](#ethernet-over-other-media)
+- [Cable Standards](#cable-standards)
+- [Firewalls](#firewalls)
+- [TIA/EIA 568A and 568B Wiring Standards](#tiaeia-568a-and-568b-wiring-standards)
+- [Twisted Pair Cable Categories](#twisted-pair-cable-categories)
+- [Other Cabling Types](#other-cabling-types)
+- [Media Converters](#media-converters)
+- [DOCSIS Cable Modems](#docsis-cable-modems)
+- [Network Devices](#network-devices)
+- [Wireless Technologies](#wireless-technologies)
+- [MAC Addresses](#mac-addresses)
+- [OSI Model](#osi-model)
+- [IP Addresses](#ip-addresses)
+- [Subnet Masks](#subnet-masks)
+- [IP Address Classes](#ip-address-classes)
+- [Public vs. Private IP Addresses](#public-vs-private-ip-addresses)
+- [Subnetting](#subnetting)
+- [IP Address Assignment](#ip-address-assignment)
+- [DHCP Servers and Scopes](#dhcp-servers-and-scopes)
+- [DHCP Relays](#dhcp-relays)
+- [TCP/IP Protocols](#tcpip-protocols)
+
 ## Network Topologies
 
 Network topology refers to the physical or logical layout of how devices are connected on a network. Several common topologies exist, each with advantages and disadvantages.
