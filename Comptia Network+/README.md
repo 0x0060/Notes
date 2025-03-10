@@ -275,6 +275,370 @@ Relay DHCP broadcasts between subnets so computers outside the DHCP server's sub
 
 ## TCP/IP Protocols
 
-- TCP (Transmission Control Protocol): Connection-oriented, uses a three-way handshake (SYN, ACK, ACK) to establish sessions, guarantees data delivery
-- UDP (User Datagram Protocol): Connectionless, doesn't guarantee delivery (fire-and-forget), faster than TCP
-- FTP (File Transfer Protocol): Standard protocol for uploading and downloading files;
+### Core Transport Protocols
+* **TCP (Transmission Control Protocol)**
+  * Connection-oriented protocol
+  * Uses three-way handshake (SYN, ACK, ACK)
+  * Guarantees data delivery
+
+* **UDP (User Datagram Protocol)**
+  * Connectionless protocol
+  * No delivery guarantee (fire-and-forget)
+  * Faster than TCP
+
+### File Transfer Protocols
+* **FTP (File Transfer Protocol)**
+  * Standard protocol for file transfer
+  * Connection-oriented using TCP
+  * Basic file upload/download capabilities
+
+* **TFTP (Trivial File Transfer Protocol)**
+  * Simple file transfer for same network
+  * Connectionless using UDP
+  * No security features
+
+* **SFTP (Secure FTP)**
+  * Enhanced FTP with SSH encryption
+  * Secure file transfer solution
+
+### Email Protocols
+* **SMTP (Simple Mail Transfer Protocol)**
+  * Email sending protocol
+  * Uses TCP for reliable delivery
+
+* **POP3 (Post Office Protocol version 3)**
+  * Email receiving protocol
+  * Downloads emails to local computer
+  * No synchronization capabilities
+
+* **IMAP4 (Internet Message Access Protocol version 4)**
+  * Receives emails
+  * Allows access and management on the server
+  * Syncs emails and folders
+
+* **HTTP (Hypertext Transfer Protocol)**
+  * Views web pages
+  * Sends information in clear text
+
+* **HTTPS (Secure HTTP)**
+  * HTTP with SSL/TLS encryption
+  * Used for secure web pages
+
+* **Telnet**
+  * Terminal emulation for accessing remote servers
+  * Not secure, sends commands in clear text
+
+* **SSH (Secure Shell)**
+  * Secure alternative to Telnet
+  * Encrypts data during transfer
+
+* **ARP (Address Resolution Protocol)**
+  * Resolves IP addresses to MAC addresses
+
+* **RARP (Reverse ARP)**
+  * Resolves MAC addresses to IP addresses
+
+* **NTP (Network Time Protocol)**
+  * Synchronizes computer clocks with master clocks
+
+* **SCP (Secure Copy Protocol)**
+  * Uses SSH for secure file transfer
+
+* **SNMP (Simple Network Management Protocol)**
+  * Used for network management
+  * Collects data from network devices
+
+### Ports
+
+Logical connections used by programs to exchange information; numbered 0-65535. Key ports to know for the Network+ exam are listed.
+
+### DNS and WINS
+
+* **DNS (Domain Name System)**
+  * Resolves domain names to IP addresses
+
+* **WINS (Windows Internet Name Service)**
+  * Resolves NetBIOS names (computer names) to IP addresses
+
+### Network Address Translation (NAT)
+
+Translates IP addresses between private and public networks.
+
+* **PAT (Port Address Translation)**
+  * Translates IP addresses based on port numbers
+
+* **SNAT (Static NAT)**
+  * Permanently links a public IP address with a private IP address
+
+### Proxy Servers
+
+Retrieve web pages on behalf of users, store them in a cache for faster retrieval; improve speed, save bandwidth, provide security by reporting web page access.
+
+### Remote Desktop Protocol (RDP)
+
+Microsoft technology for accessing remote computer desktops.
+
+### Network Access Methods
+
+* **CSMA/CD (Carrier Sense Multiple Access with Collision Detection)**
+  * Used on Ethernet networks
+  * Computers sense if the wire is idle before sending data
+  * Collisions are detected and data retransmission occurs
+
+* **CSMA/CA (Carrier Sense Multiple Access with Collision Avoidance)**
+  * Used in wireless networks
+  * Sends a small packet to check if the channel is clear before sending data
+
+### Unicast, Multicast, and Broadcast
+
+* **Broadcast**
+  * Single transmitter, multiple receivers
+
+* **Unicast**
+  * Single transmitter, single receiver
+
+* **Multicast**
+  * Single transmitter, multiple receivers simultaneously
+
+### Routing Concepts and Protocols
+
+* **Loopback Interface**
+  * Virtual interface on a router for testing and administration purposes
+
+* **Routing Table**
+  * Contains rules showing data packet paths to destinations
+
+* **Routing Protocols**
+  * Collect network information and map out best paths for data packets
+
+* **Distance Vector Protocols**
+  * Consider distance to destination based on hops (RIP, RIPv2, BGP)
+
+* **Link State Protocols**
+  * Routers share information and independently map paths (OSPF, IS-IS)
+
+* **Hybrid Protocols**
+  * Combine distance vector and link state (EIGRP)
+
+### Real-Time Protocols
+
+* **SIP (Session Initiation Protocol)**
+  * Establishes communication sessions (VoIP, instant messaging, conferencing)
+
+* **RTP (Real-Time Transport Protocol)**
+  * Transports real-time data (audio, video)
+  * Often used over UDP
+  * Used with RTCP for quality monitoring
+
+### Packet Switching vs. Circuit Switching
+
+* **Packet Switching**
+  * Data packets take different routes
+  * Reassembled at the destination
+  * Connectionless; internet uses this
+
+* **Circuit Switching**
+  * Data packets take the same dedicated route
+  * Connection-oriented; telephone lines
+
+### Internet Connection Technologies
+
+* **ISDN (Integrated Services Digital Network)**
+  * Digital transmission over telephone lines (128 Kbps)
+
+* **T1 Lines**
+  * Dedicated connections
+  * 1.544 Mbps, 24 channels at 64 Kbps each
+
+* **T3 Lines**
+  * High-speed connections
+  * 43 Mbps, 672 channels at 64 Kbps each
+
+* **E1 Lines (European T1)**
+  * 2 Mbps, 32 channels at 64 Kbps each
+
+* **E3 Lines (European T3)**
+  * 34 Mbps
+
+* **OCx (Optical Carrier)**
+  * SONET fiber-optic technology
+  * Speeds calculated as multiples of 51.84 Mbps
+
+* **DSL (Digital Subscriber Line)**
+  * Broadband data over telephone lines
+  * Types: ADSL, SDSL, VDSL
+
+* **Broadband Cable**
+  * High-speed internet over coaxial cable
+
+* **POTS/PSTN**
+  * Traditional telephone lines
+
+* **Satellite Communication**
+  * Expensive
+  * Used where other services are unavailable
+
+* **Mobile Hotspots**
+  * Portable devices using cellular networks for internet access
+
+* **WiMAX**
+  * Wireless network covering large areas
+
+* **Metro Ethernet**
+  * Metropolitan area network based on Ethernet standards
+
+### Network Types
+
+* **PAN (Personal Area Network)**
+  * Small network for connecting personal devices
+  * Example: Bluetooth
+
+* **LAN (Local Area Network)**
+  * Network within a building or close proximity
+
+* **MAN (Metropolitan Area Network)**
+  * Network spanning multiple buildings in a city
+
+* **WAN (Wide Area Network)**
+  * Largest network type
+  * Example: Internet
+
+### SCADA and Industrial Control Systems (ICS)
+
+Software for controlling and monitoring equipment in industrial facilities; communicates with sensors and systems in real time.
+
+### Cellular Network Technologies
+
+* **GSM (Global System for Mobiles)**
+  * Widely used radio system
+
+* **CDMA (Code Division Multiple Access)**
+  * Alternative radio technology used by some carriers
+
+* **4G LTE (Long Term Evolution)**
+  * Fastest current wireless communication speed
+
+* **3G**
+  * Speeds from 384 Kbps to 2 Mbps
+
+* **EDGE**
+  * Very slow technology
+
+### Remote Access Service (RAS)
+
+Enables remote connection to computers over a dial-up connection.
+
+### Remote Access Protocols
+
+* **SLIP (Serial Line Internet Protocol)**
+  * Insecure protocol for communication over serial connections
+  * Rarely used
+
+* **PPP (Point-to-Point Protocol)**
+  * Secure protocol replacing SLIP
+  * Used by ISPs for dial-up connections
+
+* **PPPoE (PPP over Ethernet)**
+  * Uses PPP over Ethernet connections
+  * For DSL, broadband, wireless
+
+* **PPTP (Point-to-Point Tunneling Protocol)**
+  * Default protocol for VPNs
+
+* **GRE (Generic Route Encapsulation)**
+  * Creates VPN tunnels with PPTP
+
+### VPNs (Virtual Private Networks)
+
+Private networks using public networks for remote connections; data is encrypted during transfer.
+
+* **VPN Concentrator**
+  * Device managing and creating VPN connections
+
+* **VPN Connection Types**
+  * Site-to-Site: Connects two offices
+  * Host-to-Site: Connects home computer to office
+  * Host-to-Host: Connects two computers directly
+
+### Authentication Protocols
+
+* **PAP (Password Authentication Protocol)**
+  * Simple but insecure
+  * Sends data in clear text
+
+* **CHAP (Challenge Handshake Authentication Protocol)**
+  * Encrypts usernames and passwords
+
+* **MS-CHAP**
+  * Microsoft's version of CHAP
+  * MS-CHAP 2 offers mutual authentication
+
+* **RADIUS**
+  * Centralized authentication server
+
+* **Kerberos**
+  * Uses tickets for authentication
+
+* **EAP (Extensible Authentication Protocol)**
+  * Extension to PPP
+  * Supports various authentication methods
+
+### Network Troubleshooting Tools
+
+* **Wire Crimper**
+  * Creates custom-length network cables
+
+* **Punch Down Tool**
+  * Connects wires to punch-down blocks
+
+* **Media Tester**
+  * Tests network cables for proper wiring
+
+* **Cable Stripper**
+  * Removes plastic shielding from cables
+
+* **TDR (Time-Domain Reflectometer)**
+  * Tests copper cables for problems
+
+* **OTDR (Optical Time-Domain Reflectometer)**
+  * Tests fiber optic cables
+
+* **Multimeter**
+  * Tests electrical circuits
+
+* **Butt Set**
+  * Tests and monitors telephone lines
+
+* **Voltage Event Recorder**
+  * Collects data on power quality
+
+* **Tone Generator**
+  * Locates cables
+
+* **Protocol Analyzer**
+  * Troubleshoots and analyzes network traffic
+  * Example: Wireshark
+
+### Viruses and Antivirus Software
+
+Harmful programs altering computer operation; antivirus software is crucial for protection and regular scanning is essential.
+
+### ESD (Electrostatic Discharge) Prevention
+
+ESD can damage computer components; prevention includes using ESD wrist straps and mats.
+
+### Proper Equipment Disposal
+
+Computer equipment contains harmful chemicals; proper disposal methods are outlined in MSDS from manufacturers or the EPA.
+
+### Safety Precautions
+
+* Turn off power and unplug cables before hardware repair
+* Remove jewelry
+* Know fire extinguisher location and use (Class C for electrical fires)
+* Manage cables to prevent tripping hazards
+* Lift heavy objects properly using legs, not back
+
+### Virtualization
+
+Consolidating physical servers and their applications onto a single physical server in a virtual environment; saves money on hardware, storage, maintenance
